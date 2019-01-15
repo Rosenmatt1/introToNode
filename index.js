@@ -2,12 +2,16 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-app.get('/cats', (req, res) => {
+app.get('/cat', (req, res) => {
   res.send('Woof')
 })
 
-app.get('/dogs', (req, res) => {
-  res.send('Dog')
+app.get('/dog', (req, res) => {
+  res.send('Woof')
+})
+
+app.post('/dog', (req, res) => {
+  res.send('The Dogs')
 })
 
 
